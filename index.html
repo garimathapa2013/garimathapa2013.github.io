@@ -1,27 +1,73 @@
-Science :
+<html>
+  <head>
+    <title>Garima Thapa</title>
+    <style>
+     * {
+			padding: 0;
+            margin: 0;
+     }
+      table{
+       border: 1px solid black;
+      }
+      td {
+      	padding: 10px;
+      }
+    </style>
+</head>
+  <body>
+    My Classes:
+ 
+    
+    <table id="myTable">
+      <tr>
+      <td>
+       S.N
+      </td>
+      <td>
+     	Time 	
+     </td>
+      <td>
+      	Class Name
+      </td>
+      <td>
+      	Teacher
+      </td>
+       <td>Meeting id</td>
+       <td>Password</td>
+       <td>Link</td>
+      </tr>
+     
+     
 
-Meeting id : 7957509575
-Password: 987654321
+     
+    </table>
+    <script>
+     const table = document.getElementById("myTable");
 
+    const classes = [
+     [1, '7:00 am', 'Science', 'Bhagawati Mam', '7957509575', '987654321', '__'],
+     [2, '7:30 am', 'Math', 'Nirmala Mam', '8515938088', '123456789', '__'],
+     [3, '8:00 am', 'Moral', 'Bhagawati Mam', '7957509575', '987654321', '__'],
+     [4, '8:30:00 am', 'English', 'Aasha Mam', '7957509575', '987654321', '__'],
+[5, '10:00 am', 'Nepali', 'Laxmi Mam', '_', '_', '__'],
+    
+    ];
+    
+    classes.forEach((cl) => {
+     let row = table.insertRow(-1);
+ 
+     cl.forEach((item, index) =>{
+var cell1 = row.insertCell(index);
+ 
+  cell1.innerHTML = item;
+ 
+        console.log(item, index)
 
-Math:
-
-meeting id : 8515938088
-password: 123456789
-
-
-Moral:
-
-Meeting id : 7957509575
-Password: 987654321
-
-
-english:
-
-https://us04web.zoom.us/j/9029200935?pwd=VlRQbzZzcHR1dk9sbG5oaTdmLytwdz09
-
-
-nepali/byakaran:
-
-https://l.facebook.com/l.php?u=https%3A%2F%2Fus05web.zoom.us%2Fj%2F81250644946%3Fpwd%3DVVRkVVdlNndSWGVCb0VzRXdBSEthQT09%26fbclid%3DIwAR3ecBU9mmBY0QBR4MqHZcr5mNQIoKzANmD85Y2QdO9Ur_N7DGYjczcnCQk&h=AT0pRnn8TgV1zIgeMc4sKflJ-9rJYa-rrCKGmWDwWagoAz2W70tT6UrHGEllbYM1JjQAQITvRSocXZhptSd29Qhkr0MKuw0eY3SKmsIAfcqLmttjKuTwH5FAPwnDbYD-rtoHkA
+      });
+    })
+    
+    	
+    </script>
+  </body>
+</html>
 
